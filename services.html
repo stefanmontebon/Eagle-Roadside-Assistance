@@ -21,7 +21,7 @@
 <style>
 :root{
   --yellow:#FFC400; --yellow-dk:#E0A800;
-  --blue:#0A2E6E; --blue-dk:#061C45; --blue-md:#123F8F;
+  --blue:#0B2A6F; --blue-dk:#061C45; --blue-md:#123F8F;
   --red:#D7191F; --red-dk:#B01218;
   --ink:#16223A; --muted:#4A5670; --bg:#F4F6FA; --white:#fff;
 }
@@ -45,6 +45,8 @@ nav a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;bac
 nav a:hover::after,nav a.active::after{width:100%}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;font-weight:700;font-size:21px;text-transform:uppercase;letter-spacing:.8px;padding:13px 30px;border-radius:4px;border:0;cursor:pointer;transition:background .25s,transform .25s}
 .btn:hover{background:var(--red-dk);transform:translateY(-2px)}
+.hd-right{display:flex;align-items:center;gap:14px}
+.topbar{text-align:center}.topbar .wrap{justify-content:center}.topbar a{color:#fff}
 .menu-btn{display:none;background:var(--blue);color:#fff;border:0;border-radius:4px;font-size:26px;width:48px;height:48px;cursor:pointer}
 
 /* Page banner */
@@ -111,7 +113,7 @@ section{padding:96px 0}
 @media(max-width:1280px){.card,.card:nth-child(n+5){grid-column:span 6}.card:last-child{grid-column:span 12}.banner h1{font-size:62px}}
 @media(max-width:1024px){
   nav{display:none;position:absolute;top:104px;left:0;right:0;background:#fff;flex-direction:column;padding:20px 32px 28px;box-shadow:0 12px 20px rgba(6,28,69,.15);align-items:flex-start}
-  nav.open{display:flex}.menu-btn{display:block}header .btn.hd{display:none}
+  nav.open{display:flex}.menu-btn{display:block}
   .areas-grid{grid-template-columns:1fr;gap:40px}
 }
 @media(max-width:700px){
@@ -127,16 +129,21 @@ section{padding:96px 0}
 </head>
 <body>
 
-<div class="topbar"><div class="wrap"><span>Serving Santa Rosa &amp; Sonoma County, CA</span><span><b>24/7</b> Emergency Towing &amp; Roadside Assistance</span></div></div>
+<div class="topbar"><div class="wrap"><span>🚨 Emergency Towing Available <b>24/7</b> — Santa Rosa &amp; Sonoma County — <a href="tel:7075227760"><b>707-522-7760</b></a></span></div></div>
 
 <header>
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Eagle Roadside Assistance home"><img src="eagle_logo.jpg" alt="Eagle Roadside Assistance logo" width="88" height="88"></a>
-    <button class="menu-btn" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <a class="logo" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#home" aria-label="Eagle Roadside Assistance home"><img src="eagle_logo.jpg" alt="Eagle Towing logo" width="88" height="88"></a>
     <nav>
-      <a href="/">Home</a><a href="/about">About</a><a class="active" href="/services">Services</a><a href="#areas">Areas</a><a href="/contact">Contact</a>
+      <a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#home">Home</a>
+      <a class="active" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/services.html">Services</a>
+      <a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">New Accounts</a>
+      <a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#contact">Contact</a>
     </nav>
-    <a class="btn hd" href="#quote">Request Service</a>
+    <div class="hd-right">
+      <a class="btn hd" href="tel:7075227760">📞 Call Us!</a>
+      <button class="menu-btn" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    </div>
   </div>
 </header>
 
@@ -146,7 +153,7 @@ section{padding:96px 0}
     <div class="crumbs"><a href="/">Home</a> &nbsp;/&nbsp; Services</div>
     <h1>Our Towing &amp; <span>Roadside Services</span></h1>
     <p>From a dead battery to a classic car that needs white-glove transport, Eagle Roadside Assistance gets you moving again, fast, safe and damage-free.</p>
-    <a class="btn" href="#quote">Get Help Now</a>
+    <a class="btn" href="tel:7075227760">📞 Call Us! 707-522-7760</a>
   </div>
 </div>
 
@@ -164,49 +171,49 @@ section{padding:96px 0}
         <div class="photo" role="img" aria-label="Mobile road service technician helping a driver" style="background-image:url('images/mobile-road-service.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">01</span></div>
         <div class="card-body"><h3>Mobile Road Service</h3>
         <p>Fast and reliable roadside assistance whenever you need it, wherever you are. Our team is equipped to handle common issues on the spot to get you back on the road quickly and safely.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
 
       <article class="card">
         <div class="photo" role="img" aria-label="Flatbed tow truck carrying a vehicle" style="background-image:url('images/flatbed-towing.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">02</span></div>
         <div class="card-body"><h3>Flatbed Towing</h3>
         <p>We provide secure and damage-free vehicle transport using modern flatbed tow trucks. This method ensures your vehicle stays completely off the road, reducing wear and risk during transit.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
 
       <article class="card">
         <div class="photo" role="img" aria-label="Wheel-lift tow truck with dollies" style="background-image:url('images/wheel-lift-dollies.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">03</span></div>
         <div class="card-body"><h3>Wheel-Lift and Dollies</h3>
         <p>Our wheel-lift and dolly systems allow for efficient towing in tight or hard-to-reach areas. Ideal for short-distance transport, this method keeps your vehicle stable and protected.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
 
       <article class="card">
         <div class="photo" role="img" aria-label="Technician performing a battery jump start" style="background-image:url('images/battery-jump-lockouts.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">04</span></div>
         <div class="card-body"><h3>Battery Jump and Lockouts</h3>
         <p>Whether your battery is dead or you’re locked out of your car, we respond quickly to assist you. Our technicians ensure a safe jump-start or damage-free entry so you can continue your journey without stress.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
 
       <article class="card">
         <div class="photo" role="img" aria-label="Wrecker recovering a vehicle from a low clearance garage" style="background-image:url('images/low-clearance-wrecker.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">05</span></div>
         <div class="card-body"><h3>Wrecker Service (Low Clearance Garage)</h3>
         <p>Specialized towing solutions for vehicles stuck in underground or low-clearance parking areas. Our equipment is designed to safely recover vehicles without causing damage in confined spaces.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
 
       <article class="card">
         <div class="photo" role="img" aria-label="Antique car on a flatbed tow truck" style="background-image:url('images/antique-flatbed.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">06</span></div>
         <div class="card-body"><h3>Flatbed Towing for Antiques</h3>
         <p>We understand the value of classic and antique vehicles, which is why we handle them with extra care. Our flatbed towing ensures maximum protection and a smooth, secure transport experience.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
 
       <article class="card">
         <div class="photo" role="img" aria-label="Medium-duty flatbed towing a van" style="background-image:url('images/medium-duty-flatbed.jpg'),linear-gradient(135deg,#0A2E6E,#1d56b8)"><span class="num">07</span></div>
         <div class="card-body"><h3>Medium-Duty Flatbed Towing Service</h3>
         <p>Designed for vans, small trucks, and other medium-duty vehicles, our service offers dependable and safe transport. We use heavy-duty flatbeds to ensure stability and proper handling throughout the journey.</p>
-        <a class="btn" href="#quote">Request Service</a></div>
+        <a class="btn" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#accounts">Request an Estimate</a></div>
       </article>
     </div>
   </div>
@@ -215,7 +222,7 @@ section{padding:96px 0}
 <div class="cta" id="quote">
   <div class="wrap">
     <h2>Stranded? We’re On Our Way.</h2>
-    <a class="btn" style="background:var(--red)" href="#quote">Request Service Now</a>
+    <a class="btn" href="tel:7075227760">📞 707-522-7760</a>
   </div>
 </div>
 
@@ -225,16 +232,16 @@ section{padding:96px 0}
       <div>
         <h2>Areas We Serve</h2>
         <ul class="links">
-          <li><a href="#">Towing on US-101</a></li>
-          <li><a href="#">Towing on CA-12</a></li>
-          <li><a href="#">Towing on CA-116</a></li>
-          <li><a href="#">Towing Downtown Santa Rosa</a></li>
-          <li><a href="#">Towing in Rohnert Park, CA</a></li>
-          <li><a href="#">Towing in Windsor, CA</a></li>
-          <li><a href="#">Towing in Sebastopol, CA</a></li>
-          <li><a href="#">Towing in Cotati, CA</a></li>
-          <li><a href="#">Towing in Healdsburg, CA</a></li>
-          <li><a href="#">Towing in Petaluma, CA</a></li>
+          <li><a href="tel:7075227760">Towing on US-101</a></li>
+          <li><a href="tel:7075227760">Towing on CA-12</a></li>
+          <li><a href="tel:7075227760">Towing on CA-116</a></li>
+          <li><a href="tel:7075227760">Towing Downtown Santa Rosa</a></li>
+          <li><a href="tel:7075227760">Towing in Rohnert Park, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Windsor, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Sebastopol, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Cotati, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Healdsburg, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Petaluma, CA</a></li>
         </ul>
       </div>
       <div>
