@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Accounts | Priority Towing in Santa Rosa, CA | Eagle Towing</title>
+<meta name="description" content="Open a priority commercial account with Eagle Towing in Santa Rosa, CA. Get faster ETAs and high-priority towing and roadside service 24/7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Overpass:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Eagle Towing","telephone":"+1-707-522-7760","email":"Eagletowing.ca@gmail.com","areaServed":"Santa Rosa, Sonoma County, CA","description":"Priority commercial towing accounts with faster ETAs, 24/7."}
+</script>
+<style>
+:root{
+  --yellow:#FFC400; --yellow-dk:#E0A800;
+  --blue:#0B2A6F; --blue-dk:#061C45; --blue-md:#123F8F;
+  --red:#D7191F; --red-dk:#B01218;
+  --ink:#16223A; --muted:#4A5670; --bg:#F4F6FA; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Overpass',sans-serif;font-size:18px;line-height:1.65;color:var(--ink);background:var(--white)}
+h1,h2,h3,.btn,nav a{font-family:'Barlow Condensed',sans-serif}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1600px;margin:0 auto;padding:0 32px}
+
+/* Header */
+.topbar{background:var(--blue-dk);color:#fff;font-size:15px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.topbar b{color:var(--yellow)}
+header{background:var(--white);position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(6,28,69,.12)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:150px;gap:24px}
+.logo img{height:136px;width:136px;object-fit:contain;display:block}
+nav{display:flex;gap:34px;align-items:center}
+nav a{font-size:22px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--blue);position:relative;padding:6px 0}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--yellow);transition:width .3s}
+nav a:hover::after,nav a.active::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;font-weight:700;font-size:21px;text-transform:uppercase;letter-spacing:.8px;padding:13px 34px;border-radius:50px;border:0;cursor:pointer;transition:background .25s,transform .25s}
+.btn:hover{background:var(--red-dk);transform:translateY(-2px)}
+.hd-right{display:flex;align-items:center;gap:14px}
+.topbar{text-align:center}.topbar .wrap{justify-content:center}.topbar a{color:#fff}
+.menu-btn{display:none;background:var(--blue);color:#fff;border:0;border-radius:50%;font-size:26px;width:48px;height:48px;cursor:pointer}
+
+/* Page banner */
+.banner{background:linear-gradient(105deg,rgba(6,28,69,.96) 0%,rgba(10,46,110,.88) 55%,rgba(10,46,110,.7) 100%),var(--blue);color:#fff;padding:96px 0 104px;position:relative;overflow:hidden}
+.banner::after{content:"";position:absolute;right:-120px;top:-60px;width:520px;height:520px;background:var(--yellow);opacity:.12;transform:rotate(45deg)}
+.banner::before{content:"";position:absolute;left:0;bottom:0;width:100%;height:10px;background:repeating-linear-gradient(135deg,var(--yellow) 0 24px,var(--blue-dk) 24px 48px)}
+.crumbs{font-size:16px;opacity:.85;margin-bottom:14px}
+.crumbs a{color:var(--yellow)}
+.banner h1{font-size:76px;line-height:1.02;font-weight:800;text-transform:uppercase;max-width:900px}
+.banner h1 span{color:var(--yellow)}
+.banner p{max-width:760px;margin:20px 0 32px;opacity:.95}
+
+/* Sections */
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-family:'Barlow Condensed';font-weight:700;font-size:20px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.sec-head{text-align:center;max-width:820px;margin:0 auto 56px}
+.sec-head h2{font-size:56px;line-height:1.05;font-weight:800;text-transform:uppercase;color:var(--blue)}
+.sec-head h2::after{content:"";display:block;width:90px;height:6px;background:var(--yellow);margin:18px auto 20px;border-radius:3px}
+.sec-head p{color:var(--muted)}
+
+/* Services: 4 on first row, 3 on second */
+#services{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.card{grid-column:span 3;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(6,28,69,.09);display:flex;flex-direction:column;border-bottom:5px solid var(--yellow);transition:transform .35s,box-shadow .35s;opacity:0;transform:translateY(28px)}
+.card:nth-child(n+5){grid-column:span 4}
+.card.in{opacity:1;transform:none}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(6,28,69,.18)}
+.photo{height:260px;background-size:cover;background-position:center;background-color:var(--blue-md);background-image:linear-gradient(135deg,var(--blue) 0%,var(--blue-md) 60%,#1d56b8 100%);position:relative;overflow:hidden}
+.photo::before{content:"";position:absolute;inset:0;background:inherit;background-size:cover;background-position:center;transition:transform .6s}
+.card:hover .photo::before{transform:scale(1.08)}
+.photo .num{position:absolute;left:0;top:18px;background:var(--yellow);color:var(--blue-dk);font-family:'Barlow Condensed';font-weight:800;font-size:24px;padding:2px 18px 2px 14px;z-index:2;clip-path:polygon(0 0,100% 0,88% 100%,0 100%)}
+.card-body{padding:28px 26px 30px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:31px;line-height:1.1;font-weight:700;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+.card p{color:var(--muted);flex:1;margin-bottom:24px}
+.card .btn{align-self:flex-start}
+
+/* CTA strip */
+.cta{background:var(--yellow);padding:44px 0}
+.cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta h2{font-size:44px;font-weight:800;text-transform:uppercase;color:var(--blue-dk);line-height:1.1}
+
+/* Areas (footer style) */
+#areas{background:var(--blue-dk);color:#dbe4f5;position:relative}
+#areas::before{content:"";position:absolute;top:0;left:0;width:100%;height:8px;background:var(--yellow)}
+.areas-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px}
+#areas h2{font-size:48px;font-weight:800;text-transform:uppercase;color:#fff;line-height:1.05;margin-bottom:26px}
+#areas h2::after{content:"";display:block;width:70px;height:5px;background:var(--yellow);margin-top:14px;border-radius:3px}
+#areas h3{font-size:26px;text-transform:uppercase;color:var(--yellow);margin:0 0 12px;font-weight:700;letter-spacing:.5px}
+.links{list-style:none;columns:2;column-gap:28px}
+.links li{break-inside:avoid;margin-bottom:10px}
+.links a{display:flex;gap:10px;align-items:center;transition:color .2s,padding .2s}
+.links a::before{content:"▸";color:var(--yellow)}
+.links a:hover{color:var(--yellow);padding-left:6px}
+.cities{margin-bottom:32px}
+.zips{display:flex;flex-wrap:wrap;gap:8px}
+.zips span{font-size:15px;font-weight:600;background:rgba(255,255,255,.08);border:1px solid rgba(255,196,0,.35);color:#fff;padding:3px 12px;border-radius:30px;transition:background .2s,color .2s}
+.zips span:hover{background:var(--yellow);color:var(--blue-dk)}
+
+/* Footer credit */
+.credit{background:#02102b;color:#9fb0d0;text-align:center;font-size:15px;padding:16px 0;letter-spacing:1px}
+.credit a{color:var(--yellow);font-weight:700}
+
+/* Responsive */
+@media(max-width:1280px){.card,.card:nth-child(n+5){grid-column:span 6}.card:last-child{grid-column:span 12}.banner h1{font-size:62px}}
+@media(max-width:1024px){
+  nav{display:none;position:absolute;top:150px;left:0;right:0;background:#fff;flex-direction:column;padding:20px 32px 28px;box-shadow:0 12px 20px rgba(6,28,69,.15);align-items:flex-start}
+  nav.open{display:flex}.menu-btn{display:block}
+  .areas-grid{grid-template-columns:1fr;gap:40px}
+}
+@media(max-width:700px){
+  body{font-size:17px}.wrap{padding:0 20px}section{padding:64px 0}
+  header .wrap{height:112px}.logo img{height:96px;width:96px}nav{top:112px}
+  .banner{padding:64px 0 76px}.banner h1{font-size:46px}
+  .sec-head h2,#areas h2{font-size:40px}.cta h2{font-size:34px}
+  .card,.card:nth-child(n+5),.card:last-child{grid-column:span 12}.photo{height:230px}
+  .links{columns:1}.topbar .wrap{justify-content:center;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.card{opacity:1;transform:none}}
+
+/* Accounts */
+#accounts{background:var(--bg)}
+.acc-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.acc-copy h2{font-size:54px;line-height:1.05;font-weight:800;text-transform:uppercase;color:var(--blue)}
+.acc-copy h2::after{content:"";display:block;width:90px;height:6px;background:var(--yellow);margin:18px 0 22px;border-radius:3px}
+.acc-copy>p{color:var(--muted);margin-bottom:16px}
+.perks{margin-top:30px;display:grid;gap:18px}
+.perk{display:flex;gap:20px;align-items:flex-start;background:#fff;border-radius:8px;padding:22px 24px;border-left:6px solid var(--yellow);box-shadow:0 8px 24px rgba(6,28,69,.08);transition:transform .3s,box-shadow .3s}
+.perk:hover{transform:translateX(6px);box-shadow:0 14px 32px rgba(6,28,69,.16)}
+.perk .ico{flex:0 0 60px;height:60px;border-radius:50%;background:var(--blue);color:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:26px}
+.perk h3{font-size:26px;font-weight:700;text-transform:uppercase;color:var(--blue);line-height:1.15;margin-bottom:2px}
+.perk p{font-size:17px;color:var(--muted);line-height:1.5}
+.form-card{background:#fff;border-radius:10px;box-shadow:0 18px 50px rgba(6,28,69,.16);border-top:8px solid var(--yellow);overflow:hidden;position:sticky;top:170px}
+.form-head{background:var(--blue);color:#fff;padding:28px 34px}
+.form-head h3{font-size:42px;text-transform:uppercase;font-weight:800;line-height:1.05}
+.form-head h3 span{color:var(--yellow)}
+.form-head p{font-size:17px;opacity:.92;margin-top:6px}
+form{padding:32px 34px 36px}
+.field{margin-bottom:22px}
+label{display:block;font-family:'Barlow Condensed';font-weight:700;font-size:21px;text-transform:uppercase;letter-spacing:.8px;color:var(--blue);margin-bottom:6px}
+label i{color:var(--red);font-style:normal}
+input{width:100%;font:inherit;font-size:18px;padding:15px 18px;border:2px solid #d5dcea;border-radius:8px;background:#f9fbff;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+input:focus{outline:0;border-color:var(--yellow-dk);box-shadow:0 0 0 4px rgba(255,196,0,.28);background:#fff}
+form .btn{width:100%;margin-top:6px}
+.note{font-size:15px;color:var(--muted);text-align:center;margin-top:14px}
+.thanks{display:none;text-align:center;padding:50px 34px}
+.thanks .ico{width:84px;height:84px;border-radius:50%;background:var(--yellow);color:var(--blue-dk);font-size:42px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.thanks h3{font-size:36px;text-transform:uppercase;color:var(--blue);font-weight:800}
+.form-card.sent form{display:none}.form-card.sent .thanks{display:block}
+@media(max-width:1024px){.acc-grid{grid-template-columns:1fr;gap:40px}.form-card{position:static}}
+@media(max-width:700px){.acc-copy h2{font-size:40px}.form-head{padding:22px 20px}.form-head h3{font-size:32px}form{padding:24px 20px 28px}.perk{padding:18px}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap"><span>🚨 Emergency Towing Available <b>24/7</b> — Santa Rosa &amp; Sonoma County — <a href="tel:7075227760"><b>707-522-7760</b></a></span></div></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#home" aria-label="Eagle Roadside Assistance home"><img src="data:image/jpeg;base64,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" alt="Eagle Towing logo" width="136" height="136"></a>
+    <nav>
+      <a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#home">Home</a>
+      <a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/services.html">Services</a>
+      <a class="active" href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/accounts.html">New Accounts</a>
+      <a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/contact.html">Contact</a>
+    </nav>
+    <div class="hd-right">
+      <a class="btn hd" href="tel:7075227760">📞 Call Us!</a>
+      <button class="menu-btn" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="banner">
+  <div class="wrap">
+    <div class="crumbs"><a href="https://stefanmontebon.github.io/Eagle-Roadside-Assistance/#home">Home</a> &nbsp;/&nbsp; New Accounts</div>
+    <h1>New <span>Accounts</span></h1>
+    <p>Put your fleet or business at the front of the line. A priority account moves you ahead of regular customers whenever you call.</p>
+    <a class="btn" href="#signup">Partner With Us</a>
+  </div>
+</div>
+
+<section id="accounts">
+  <div class="wrap">
+    <div class="acc-grid">
+      <div class="acc-copy">
+        <span class="eyebrow">Priority Service</span>
+        <h2>Sign Up for a Priority Account</h2>
+        <p>Enrolling your company in our priority account program places you on our priority dispatch list. Whenever you call or request service, your vehicles are served ahead of regular accounts and one-time customers, which means a faster ETA and less downtime for your business.</p>
+        <p>It is our way of rewarding the businesses that rely on us, with a more professional and dependable level of service.</p>
+        <div class="perks">
+          <div class="perk"><div class="ico">⚡</div><div><h3>Priority Dispatch</h3><p>Your company is placed ahead of regular accounts and customers.</p></div></div>
+          <div class="perk"><div class="ico">⏱️</div><div><h3>Faster ETA</h3><p>Reduce downtime with quicker response when your vehicles need help.</p></div></div>
+          <div class="perk"><div class="ico">🕒</div><div><h3>24/7 Availability</h3><p>High-priority towing and roadside service every day, day or night.</p></div></div>
+        </div>
+      </div>
+
+      <div class="form-card" id="signup">
+        <div class="form-head"><h3>Partner <span>With Us!</span></h3><p>Get in touch so you can get fast ETA and high-priority services 24/7.</p></div>
+        <form id="acctForm" novalidate>
+          <div class="field"><label for="company">Company Name <i>*</i></label><input id="company" name="company" type="text" placeholder="Your company name" required autocomplete="organization"></div>
+          <div class="field"><label for="address">Company Address <i>*</i></label><input id="address" name="address" type="text" placeholder="Street, city, state, ZIP" required autocomplete="street-address"></div>
+          <div class="field"><label for="email">Email <i>*</i></label><input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email"></div>
+          <button class="btn" type="submit">Submit</button>
+          <p class="note">Prefer to talk? Call <a href="tel:7075227760"><b>707-522-7760</b></a>, open 24/7.</p>
+        </form>
+        <div class="thanks"><div class="ico">✓</div><h3>Thank You!</h3><p>We received your request and will be in touch shortly about your priority account.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="areas-grid">
+      <div>
+        <h2>Areas We Serve</h2>
+        <ul class="links">
+          <li><a href="tel:7075227760">Towing on US-101</a></li>
+          <li><a href="tel:7075227760">Towing on CA-12</a></li>
+          <li><a href="tel:7075227760">Towing on CA-116</a></li>
+          <li><a href="tel:7075227760">Towing Downtown Santa Rosa</a></li>
+          <li><a href="tel:7075227760">Towing in Rohnert Park, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Windsor, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Sebastopol, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Cotati, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Healdsburg, CA</a></li>
+          <li><a href="tel:7075227760">Towing in Petaluma, CA</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="cities">
+          <h3>Cities &amp; Communities</h3>
+          <p>Santa Rosa, Rohnert Park, Windsor, Sebastopol, Cotati, Healdsburg, Petaluma, Sonoma, Kenwood, Glen Ellen, Forestville, Guerneville, Cloverdale, Occidental, Bodega Bay, Penngrove, Boyes Hot Springs, Fulton, Graton, Larkfield-Wikiup, Roseland, and nearby communities.</p>
+        </div>
+        <h3>ZIP Codes</h3>
+        <div class="zips" id="zips"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="credit">© 2026 Eagle Towing &nbsp;|&nbsp; DESIGNED BY: <a href="https://www.linkedin.com/in/stefan-montebon/" target="_blank" rel="noopener">STEFAN M.</a> WEB.DEV</div>
+
+<script>
+const z="95401, 95402, 95403, 95404, 95405, 95406, 95407, 95409, 95412, 95416, 95419, 95421, 95425, 95430, 95431, 95436, 95439, 95441, 95442, 95444, 95446, 95448, 95450, 95452, 95462, 95465, 95471, 95472, 95473, 95476, 95480, 95486, 95487, 95492, 95497".split(", ");
+document.getElementById("zips").innerHTML=z.map(c=>`<span>${c}</span>`).join("");
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav").classList.remove("open")));
+// Form: set ENDPOINT to your form service URL (Jotform, Formspree, etc.). Empty = opens the visitor's email app addressed to Eagle Towing.
+const ENDPOINT="";
+const form=document.getElementById("acctForm");
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  if(!form.reportValidity())return;
+  const d=Object.fromEntries(new FormData(form));
+  if(ENDPOINT){
+    try{await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});}catch(err){}
+  }else{
+    location.href="mailto:Eagletowing.ca@gmail.com?subject="+encodeURIComponent("New Priority Account Request")+"&body="+encodeURIComponent("Company Name: "+d.company+"\nCompany Address: "+d.address+"\nEmail: "+d.email);
+  }
+  form.closest(".form-card").classList.add("sent");
+});
+</script>
+</body>
+</html>
